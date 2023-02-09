@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Big Shoulders Display';
+    max-width: 100vw;
+    flex-wrap: wrap;
+}
+.back{
+    display: flex;
+    width: 260px;
+    height: 72px;
+    background-color: #151515;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 35px;
+}
+.back:hover{
+    background-color: #D5966C;
+    opacity: 1;
+}
+
+.arrow{
+    cursor: pointer;
+    height: 72px;
+    width: 56px;
+    background: #D5966C;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.back:hover .arrow{
+    background-color: #151515;
+    opacity: 1;
+}
+.icon-arrow{
+    height: 24px;
+    width: 8px;
+}
+.back-txt{
+    font-family: 'Big Shoulders Display';
+    font-weight: 800;
+    
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.63636px;
+    color: #FFFFFF;
+}
+.background{
+    background-image: url(assets/mobile/image-map.png);
+    background-repeat: no-repeat ;
+    height: 574px;
+    width: 100vw;
+}
+
+.container{
+    width: 100vw;
+    height: 493px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #151515;
+    padding: 48px 16px 56px 16px;
+    margin-top: -25px;
+}
+.title-our-loc{
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    /* identical to box height, or 90% */
+    text-transform: uppercase;
+
+    /* White */
+    color: #FFFFFF;
+}
+.title-king{
+    font-family: 'Big Shoulders Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: #D5966C;
+}
+.newport, .full-txt{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.our-location{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer{
+    width: 100vw;
+    height: 336px;
+    background: #D5966C;;
+    padding: 48px 32px;
+    display: flex;
+}
+.footer-logo{
+    height: 40px;
+    width: 110px;
+}
+.footer-txt{
+
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #151515;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.icon-images{
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 20px;
+}
+.facebook{
+    filter: invert(1);
+    cursor: pointer;
+}
+.instagram{
+    filter: invert(1);
+    cursor: pointer;
+}
+.twitter{
+    filter: invert(1);
+    cursor: pointer;
+}
+
+   .facebook:hover{
+    -webkit-filter: brightness(.9);
+   filter: brightness(.9);
+   }
+
+   .instagram:hover{
+    -webkit-filter: brightness(.9);
+   filter: brightness(.9);
+   }
+
+   .twitter:hover{
+    -webkit-filter: brightness(.9);
+   filter: brightness(.9);
+   }
+@media  screen and (min-width: 768px){
+    .background{
+        background-image: url(assets/tablet/image-map.png);
+
+    }
+    .back{
+        width: 264px;
+        margin-left: 30px;
+    }
+    .container{
+        flex-flow: nowrap;
+        padding: 88px 40px 80px 39px;
+        gap: 68px;
+        margin-top: 0;
+    }
+    .our-location{
+        flex-direction: column;
+        width: 398px;
+        height: 268px;
+    }
+    .our{
+        width: 223px;
+        height: 268px;
+    }
+    footer{
+        height: 216px;
+    }
+    .footer{
+        height: 104px;
+        width: 100vw;
+        flex-direction: row;
+    }
+    .footer-logo{
+        width: 110px;
+        height: 40px;
+    }
+    .footer-txt{
+        width: 281px;
+    
+    }
+    .icon-images{
+        height: 20px;
+        flex-direction: row;
+    }
+   .facebook{
+    filter: invert(1);
+    cursor: pointer;
+   }
+   .instagram{
+    filter: invert(1);
+    cursor: pointer;
+   }
+   .twitter{
+    filter: invert(1);
+    cursor: pointer;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+    .back{
+        margin-left: 156px;
+    }
+    .title-our-loc{
+        font-size: 70px;
+        line-height: 70px;
+    }
+    .background{
+        background-image: url(assets/desktop/image-map.png);
+        background-repeat: no-repeat;
+    }
+    .container{
+        padding: 104px 165px 128px 165px;
+        height: 548px;
+        justify-content: space-between;
+    }
+    .our-location{
+        width: 540px;
+        height: 316px;
+    }
+    footer{
+        height: 244px;
+        padding: 80px 165px;
+    }
+    .footer-txt{
+        width: 430px;
+        height: 84px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .footer-logo{
+        width: 159px;
+        height: 58px;
+    }
+   .facebook{
+    filter: invert(1);
+    cursor: pointer;
+   }
+
+   .instagram{
+    filter: invert(1);
+    cursor: pointer;
+   }
+  
+   .twitter{
+    filter: invert(1);
+    cursor: pointer;
+   }
+  
+}
