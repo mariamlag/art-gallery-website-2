@@ -352,11 +352,14 @@ footer{
         display:none;
     }
     .first-image{
-        backdrop-filter: invert(1);
-        -webkit-text-fill-color: white;
+        background-color: #151515;
         width: 450px;
         height: 799px;
         display: flex;
+    }
+    .title{
+        color: #f2f2f2;
+        mix-blend-mode: difference;
     }
     .container-1{
         height: 800px;
